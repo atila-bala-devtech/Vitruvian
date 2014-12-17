@@ -247,10 +247,6 @@
       <Project>{260613C4-CE61-46B8-8332-3F33787386EF}</Project>
       <Name>Vitruvian.BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Vitruvian.DataAccess\Vitruvian.DataAccess.csproj">
-      <Project>{8da69c88-f30b-42e2-a307-269bd3d87d15}</Project>
-      <Name>Vitruvian.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Vitruvian.Shared\Vitruvian.Shared.csproj">
       <Project>{00C75687-2A4E-4A4C-B3BE-EE4646F34D71}</Project>
       <Name>Vitruvian.Shared</Name>
