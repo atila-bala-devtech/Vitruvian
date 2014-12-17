@@ -159,9 +159,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MamaTvojaController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Models\Response.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,6 +191,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MamaTvoja\MamaTvoja.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -238,6 +241,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vitruvian.BLL\Vitruvian.BLL.csproj">
+      <Project>{260613C4-CE61-46B8-8332-3F33787386EF}</Project>
+      <Name>Vitruvian.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vitruvian.DataAccess\Vitruvian.DataAccess.csproj">
+      <Project>{8da69c88-f30b-42e2-a307-269bd3d87d15}</Project>
+      <Name>Vitruvian.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vitruvian.Shared\Vitruvian.Shared.csproj">
+      <Project>{00C75687-2A4E-4A4C-B3BE-EE4646F34D71}</Project>
+      <Name>Vitruvian.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

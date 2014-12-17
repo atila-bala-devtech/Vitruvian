@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BusinessLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vitruvian.DataAccess\Vitruvian.DataAccess.csproj">
+      <Project>{8DA69C88-F30B-42E2-A307-269BD3D87D15}</Project>
+      <Name>Vitruvian.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vitruvian.Shared\Vitruvian.Shared.csproj">
+      <Project>{00C75687-2A4E-4A4C-B3BE-EE4646F34D71}</Project>
+      <Name>Vitruvian.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
